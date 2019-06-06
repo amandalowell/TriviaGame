@@ -12,6 +12,9 @@ var questionCounter = 0;
 
 $("#startButton").click(function(event){
     $("#gameScreen").css("display", "block"); //show the game
+    $(this).css("display", "none");
+    
+    $("#scorePage").css("display", "block"); //show the game
     $(this).css("display", "none"); //hide start button
     startTimer();
 })
@@ -33,14 +36,21 @@ function startTimer(){
 }
 
 function endGame(){
-    //show correct answers and incorrect answers, use same format as above to show or block display
-
-}
-
-$("endButton").click(function(event){
-    $("#scorePage").css("display", "block");
+    $("#scorePage").css("display");
     $(this).css("display","none");
     $("#timer").css("display","none");
+}
+    //show correct answers and incorrect answers, use same format as above to show or block display
+
+
+
+$("#endButton").click(function(event){
+    $("#scorePage").css("display");
+    $(this).css("display","none");
+    $("#timer").css("display","none");
+
+    
+    //need to hide game screen, need to hide score until end button is clicked.
 })
 
 

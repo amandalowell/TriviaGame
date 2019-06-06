@@ -66,3 +66,15 @@ p {
 .Q {
     background-color: rgba(167, 57, 17,.5);
 }
+
+#endButton{
+    color: white;
+    background-color: rgba(16, 16, 165,.6);
+    margin-top: 25px;
+    font-size: 22px;
+    border-style: dotted;
+    border-color:goldenrod;
+    width: 40%;
+    margin-left: 210px ;
+
+}
