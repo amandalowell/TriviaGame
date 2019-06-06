@@ -1,5 +1,5 @@
 // time for each question
-var time = 15;
+var time = 60;
 
 // # of questions user got right
 var correctGuesses = 0;
@@ -9,6 +9,26 @@ var incorrectGuesses = 0;
 
 // which question the user is on
 var questionCounter = 0;
+
+$("#startButton").click(function(event){
+    $("#gameScreen").css("display", "block"); //show the game
+    $(this).css("display", "none"); //hide start button
+    startTimer();
+})
+
+function startTimer(){
+    //time var set to 60
+    //want to count down seconds to 0
+    //every second decrement the time value
+    //make sure not less than 0, if less than 0, call endGame function
+    setInterval(function(){
+        time--
+        console.log(time)
+        $("#timer").text(time);
+    }, 1000) //this is 1 second. 
+
+}
+
 
 
 //things i need :
