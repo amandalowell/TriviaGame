@@ -24,13 +24,24 @@ function startTimer(){
     setInterval(function(){
         time--
         console.log(time)
-        $("#timer").text(time);
+        if(time < 0){
+            endGame(); // pulls up final screen, if they dont press done in time
+        }
+        $("#timer").text(time); //displays countdown on screen
     }, 1000) //this is 1 second. 
 
 }
 
+function endGame(){
+    //show correct answers and incorrect answers, use same format as above to show or block display
+    
+}
 
 
+
+
+
+// make done call endGame function when clicked
 //things i need :
 // variable to start game ( click button called Start)
 //need a timeout function for timer (call it time reamaining)
