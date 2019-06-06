@@ -37,6 +37,12 @@ function endGame(){
 
 }
 
+$("endButton").click(function(event){
+    $("#scorePage").css("display", "block");
+    $(this).css("display","none");
+    $("#timer").css("display","none");
+})
+
 
 
 
@@ -47,4 +53,3 @@ function endGame(){
 //click button for "done"
 //function to get you to the final screen to show : correct ans., incorrect ans.
 
-//questions: how to make seperate pages....do i hide start button/ how does that html look
