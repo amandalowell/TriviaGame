@@ -40,8 +40,29 @@ h1 {
 
 p {
     
-    font-size: 22px;
+    font-size: 20px;
     
 }
 
+.remaining {
+    font-size: 22px;
+    background-color: rgba(16, 16, 165,.6);
+    
+    
+}
 
+#timer {
+    color:white;
+    font-size: 24px;
+    border-style: dotted;
+    border-color: goldenrod;
+}
+
+#startButton {
+    color: white;
+    font-size: 26px;
+}
+
+.Q {
+    background-color: rgba(167, 57, 17,.5);
+}

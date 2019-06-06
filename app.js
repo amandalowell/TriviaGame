@@ -34,17 +34,15 @@ function startTimer(){
 
 function endGame(){
     //show correct answers and incorrect answers, use same format as above to show or block display
-    
+
 }
 
 
 
 
 
-// make done call endGame function when clicked
-//things i need :
+// make "done" call endGame function when clicked
 // variable to start game ( click button called Start)
-//need a timeout function for timer (call it time reamaining)
 //need a reset function for when you want to start a new game/ end old game
 //click button for "done"
 //function to get you to the final screen to show : correct ans., incorrect ans.
