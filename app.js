@@ -7,8 +7,7 @@ var correctGuesses = 0;
 // # of questions user got right
 var incorrectGuesses = 0;
 
-// which question the user is on
-var questionCounter = 0;
+
 
 var questions = [
     {
@@ -32,6 +31,46 @@ var questions = [
       correctAnswer: "Portal Jump",
     }, 
     ];
+
+    
+	function questionContent() {
+		
+    	$("#gameScreen").append("<p><strong>" + 
+    		questions().question + 
+    		"</p><p class='choices'>" + 
+    		questions.choices[0] + 
+    		"</p><p class='choices'>" + 
+    		questions().choices[1] + 
+    		"</p><p class='choices'>" + 
+    		questions().choices[2] + 
+    		"</p><p class='choices'>" + 
+    		questions().choices[3] + 
+    		"</strong></p>");
+    }
+    
+   
+
+    function userWin() {
+		
+		correctGuesses++;
+        var correctAnswer = questions.correctAnswer;
+       
+		
+	}
+
+	
+	function userLoss() {
+		
+		incorrectGuesses++;
+		var correctAnswer = questions.correctAnswer;
+		losses++;
+    }
+    
+   
+
+
+
+    
     
 
 $("#startButton").click(function(event){
@@ -74,28 +113,6 @@ $("#endButton").click(function(event){
     $("#timer").css("display","none");
 
     
-    //need to hide game screen, need to hide score until end button is clicked.
 })
 
-function questionContent() {
-    // a for loop would be cool here...
-    $("#gameScreen").append("<p><strong>" + 
-        questions[questionCounter].question + 
-        "</p><p class='choices'>" + 
-        questions[questionCounter].choices[0] + 
-        "</p><p class='choices'>" + 
-        questions[questionCounter].choices[1] + 
-        "</p><p class='choices'>" + 
-        questions[questionCounter].choices[2] + 
-        "</p><p class='choices'>" + 
-        questions[questionCounter].choices[3] + 
-        "</strong></p>");
-}
-
-
-// make "done" call endGame function when clicked
-// variable to start game ( click button called Start)
-//need a reset function for when you want to start a new game/ end old game
-//click button for "done"
-//function to get you to the final screen to show : correct ans., incorrect ans.
 
